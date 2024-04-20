@@ -1,7 +1,7 @@
 import { Plugin, ItemView } from "obsidian";
 
 /**
- * Plugin to display node size in Obsidian Console.
+ * Plugin to display node size in Obsidian.
  */
 export default class DisplayCurrentNodeSize extends Plugin {
     async onload(): Promise<void> {
@@ -13,8 +13,8 @@ export default class DisplayCurrentNodeSize extends Plugin {
             const canvas = (canvasView as any).canvas;
 
             if (canvas) {
-                const canvasElement = canvas.canvasEl;
-                const nodes = canvasElement.querySelectorAll(".canvas-node");
+                const canvasElt = canvas.canvasEl;
+                const nodes = canvasElt.querySelectorAll(".canvas-node");
 
                 nodes.forEach((node: Element) => {
                     const observer = new ResizeObserver((entries) => {
