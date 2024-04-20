@@ -5,7 +5,7 @@
 	"minAppVersion": "0.15.0",
 	"description": "Display size of canvas node in Obsidian.",
 	"author": "istfredy",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"authorUrl": "",
+	"fundingUrl": "",
 	"isDesktopOnly": false
 }
